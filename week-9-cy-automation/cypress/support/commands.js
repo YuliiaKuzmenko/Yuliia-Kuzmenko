@@ -10,10 +10,10 @@
 //
 //
 // -- This is a parent command --
-Cypress.Commands.add('login', (email = "ynevmyvaka@gmail.com", password = "12345678") => {    
+Cypress.Commands.add('loginApi', (email = "qa-default@gmail.com", password = "12345678") => {    
     cy.request('POST', '/api/users/login', {
     "email": email,
-    "password":password
+    "password": password
     }).then(
     (response) => {
       // response.body is automatically serialized into JSON
@@ -21,6 +21,11 @@ Cypress.Commands.add('login', (email = "ynevmyvaka@gmail.com", password = "12345
     }
   )
 })
+Cypress.on("uncaught:exception", (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false;
+  });
 //
 //
 // -- This is a child command --

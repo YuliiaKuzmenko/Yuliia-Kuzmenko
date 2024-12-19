@@ -1,4 +1,4 @@
-class FeaturedLisitngsPage{
+class FeaturedListingsPage{
     get searchListingFld() {
         return cy.get('div[class *= "MuiGrid-root MuiGrid-item MuiGrid-grid-xs-t"] input[class *= "Mui"]');
       }
@@ -42,4 +42,4 @@ class FeaturedLisitngsPage{
         return cy.get('.MuiGrid-container.MuiGrid-root.MuiGrid-spacing-xs-2.css-isbt42 > div:nth-of-type(1)');
     }
 }
-export default new FeaturedLisitngsPage();
+export default new FeaturedListingsPage();

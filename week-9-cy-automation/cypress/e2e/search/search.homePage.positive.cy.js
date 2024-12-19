@@ -1,5 +1,5 @@
-import featuredListingsPage from "../../../page_objects/featuredListingsPage";
-import homePage from "../../../page_objects/home.page";
+import featuredListingsPage from "../../page_objects/featuredListingsPage";
+import homePage from "../../page_objects/home.page";
 
 let bedrooms = [];
 
@@ -46,11 +46,11 @@ describe("Search homePage", () => {
   });
 
   it("Should search by city", () => {
-    homePage.cityMnPg.click().type("Irvine");
-    homePage.startSearchBtnMnPg.click();
-    // Verify listing city on the listing page
-    featuredListingsPage.listingPropertyCity.contains("City: Irvine").should("be.visible");
-    featuredListingsPage.listingMoreInfoBtn.click();
+  homePage.cityMnPg.click().type("Irvine");
+  homePage.startSearchBtnMnPg.click();
+  // Verify listing city on the listing page
+  featuredListingsPage.listingPropertyCity.contains("City: Irvine").should("be.visible");
+  featuredListingsPage.listingMoreInfoBtn.click();
   });
 
   it("Should search by price", () => {

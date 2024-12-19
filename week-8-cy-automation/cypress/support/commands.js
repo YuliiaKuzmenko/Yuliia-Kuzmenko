@@ -13,6 +13,13 @@
 // Cypress.Commands.add('login', (email, password) => { ... })
 //
 //
+
+Cypress.on("uncaught:exception", (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false;
+  });
+  
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
 //

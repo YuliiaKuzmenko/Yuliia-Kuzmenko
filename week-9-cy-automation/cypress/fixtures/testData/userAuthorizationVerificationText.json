@@ -1,0 +1,8 @@
+{
+    "invalidEmail": "Email must be a valid email address",
+    "invalidCredentials": "Wrong email or password",
+    "missedEmail": "Email is required",
+    "missedPassword": "Password is required",
+    "missedFirstName": "First name required",
+    "missedLastName": "Input data validation failed"
+}
