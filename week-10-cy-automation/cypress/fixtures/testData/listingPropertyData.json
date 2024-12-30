@@ -1,0 +1,17 @@
+{
+   "title": "Promenade at Irvine Spectrum",
+   "description": "Fancy house close to the center",
+   "address": "117 Port",
+   "city": "Irvine",
+   "state": "CA",
+   "zipCode": 75206,
+   "price": 580000,
+   "bedrooms": 2,
+   "bathrooms": 3,
+   "garage": 2,
+   "sqft": 924,
+   "lotSize": 8000,
+   "isPublished": false,
+   "keyword": "Spectrum"
+}
+

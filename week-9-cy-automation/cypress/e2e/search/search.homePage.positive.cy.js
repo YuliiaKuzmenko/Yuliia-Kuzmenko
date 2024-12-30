@@ -11,7 +11,7 @@ describe("Search homePage", () => {
 
   it("Should search by keyword", () => {
     homePage.searchInputFieldMainPage.click().type("Spectrum");
-    homePage.startSearchButtonMainPage.click();
+    homePage.startSearchButtMainPage.click();
 
     featuredListingsPage.searchListingInputField
       .should("have.value", "Spectrum")
@@ -24,7 +24,7 @@ describe("Search homePage", () => {
   it("Should search by bedrooms count", () => {
     homePage.bedroomsDropdownListMainPage.click();
     homePage.twoPlusBedroomsNumberMainPage.click();
-    homePage.startSearchButtonMainPage.click();
+    homePage.startSearchButtMainPage.click();
 
     featuredListingsPage.propertiesInSearchList.each(($el) => {
       cy.wrap($el)
@@ -46,7 +46,7 @@ describe("Search homePage", () => {
 
   it("Should search by city", () => {
     homePage.cityInputFieldMainPage.click().type("Irvine");
-    homePage.startSearchButtonMainPage.click();
+    homePage.startSearchButtMainPage.click();
     featuredListingsPage.listingPropertyCityName
       .contains("City: Irvine")
       .should("be.visible");

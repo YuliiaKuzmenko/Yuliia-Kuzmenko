@@ -1,32 +1,29 @@
 class Homepage {
   get loginFormLink() {
-    return cy.get('[href="/auth/login"]');
+      return cy.get('[href="/auth/login"]');
   }
   get registerFormLink() {
-    return cy.get('[href="/auth/register"]');
+      return cy.get('[href="/auth/register"]');
   }
-  get darkMode() {
-    return cy.get(
-      'input[class*="PrivateSwitchBase-input MuiSwitch-input css-1m9pwf3"]'
-    );
+  get darkMode(){
+      return cy.get('input[class*="PrivateSwitchBase-input MuiSwitch-input css-1m9pwf3"]')
   }
   get searchInputFieldMainPage() {
-    return cy.get("input[id *= r1]");
+      return cy.get('input[id *= r1]');
   }
   get bedroomsDropdownListMainPage() {
-    return cy.get('div[id*="r2"][class *= "MuiSelect-select"]');
+      return cy.get('div[id*="r2"][class *= "MuiSelect-select"]');
   }
   get twoPlusBedroomsNumberMainPage() {
-    return cy.get('ul li[class *="MuiButtonBase-root"][data-value = "2"]');
+      return cy.get('ul li[class *="MuiButtonBase-root"][data-value = "2"]');
   }
   get cityInputFieldMainPage() {
-    return cy.get(
-      'div[class*="MuiFormControl"] div[class*="MuiInputBase-root"] input[id*="r4"]'
-    );
+      return cy.get('div[class*="MuiFormControl"] div[class*="MuiInputBase-root"] input[id*="r4"]');
   }
-  get startSearchButtonMainPage() {
-    return cy.get('button[class *= "MuiButtonBase"]');
-  }
+  get startSearchButtMainPage() {
+      return cy.get('button[class *= "MuiButtonBase"]');
+    }
+  
 }
 
 export default new Homepage();
